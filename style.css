@@ -1,0 +1,197 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Comic Sans MS", "Comic Sans";
+}*/
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+*{
+    background-color:aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+h1{
+    margin-top: 3px;
+    margin-bottom: 7px;
+    font-size: xx-large;
+}
+
+#banner{
+    width: 99%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+
+/* Los "a" en el diseño del cliente tienen diferente tamaño, según el contenido de cada uno. Se respeta eso a la espera de más aclaraciones sobre el tema */
+nav a{
+    
+    text-decoration: none;
+    color: white;
+    background-color: #4472c4;
+    border: 2px solid black;
+    height: max-content;
+    width:max-content;
+    padding: 5px 20px 5px 20px;
+    display: inline-block;
+    box-shadow: 2px 2px rgba(88, 87, 87, 0.412);
+    margin: 0;
+}
+
+.active{
+    background-color: #71ad47;
+
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    height: 1200%;
+}
+
+h2{
+    width: 100%;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    border: 1.5px solid black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+
+dt{
+    font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    display: inline-block;
+    position: relative;
+    margin-left: 4px;
+
+}
+
+blockquote{
+    display: inline-block;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+dt{
+    margin-bottom: 3px;
+}
+
+dd{
+    margin-bottom: 30px;
+    text-indent: 40px;
+}
+
+#seccion{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+#images{
+    width: 120px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 4px;
+}
+
+.parrafo{
+    text-indent: 20px;
+    display: inline-block;
+}
+
+.contact{
+    margin-top: 30px;
+    display: inline-block;
+    text-align:left;
+    line-height: 45px;
+    margin-left: 60px;
+}
+
+#hockey3{
+    position: relative;
+    top: 25px;
+    left: 10px;
+    padding-top: 20px;
+}
+
