@@ -1,197 +1,149 @@
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    font-family: "Comic Sans MS", "Comic Sans";
-}*/
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-
 *{
-    background-color:aliceblue;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #F8E12E;
+    opacity: 0.97;
+    background-image:  radial-gradient(#5fa199 1.8px, transparent 1.8px), radial-gradient(#5fa199 1.8px, #F8E12E 1.8px);
+    background-size: 72px 72px;
+    background-position: 0 0,36px 36px; 
+}
+
 header{
-    position: relative;
-    padding: 0px;
-    margin: 0px;
-    
+    min-height: 20vh;
 }
 
-h1{
-    margin-top: 3px;
-    margin-bottom: 7px;
-    font-size: xx-large;
-}
-
-#banner{
-    width: 99%;
-    display: block;
+.container{
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-
-nav{
-    position: absolute;
-    top: 20px;
-    right: 12px;
+.banner{
+    width: 100%;
+    max-height: 60vh;
+    display: block;
+    margin: auto;
+    opacity: 0.90;
 }
 
-/* Los "a" en el diseño del cliente tienen diferente tamaño, según el contenido de cada uno. Se respeta eso a la espera de más aclaraciones sobre el tema */
-nav a{
+#titulo{
+    width: 25%;
+    position: absolute;
+    top: 5vh;
+    left: 25vh;
     
+}
+
+.nav{
+    position: absolute;
+    top: 4vh;
+    right: 3vh;
+    
+}
+
+nav a{
+    text-align: center;
     text-decoration: none;
-    color: white;
-    background-color: #4472c4;
+    font-weight: bold;
+    color: black;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(95,161,153,1) 65%);
     border: 2px solid black;
     height: max-content;
-    width:max-content;
-    padding: 5px 20px 5px 20px;
+    width:12vh;
+    padding: 5px 10px 5px 10px;
     display: inline-block;
-    box-shadow: 2px 2px rgba(88, 87, 87, 0.412);
+    box-shadow: 5px 5px rgba(88, 87, 87, 0.412);
     margin: 0;
 }
 
 .active{
-    background-color: #71ad47;
-
+    background-color: #F8E12E;
 }
 
 main{
-    margin: 0;
-    padding: 0;
-    height: 1200%;
+    max-height: 80vh;
 }
 
 h2{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(95,161,153,1) 65%);
     width: 100%;
     margin: 0;
     padding-top: 6px;
     padding-bottom: 8px;
-    border: 1.5px solid black;
+    align-self: flex-start;
     text-align: center;
     font-weight: bolder;
-    font-size: large;
+    font-size: x-large;
 }
 
-dt{
-    font-weight: bold;
+.container1{
+    display: flex;
+    justify-content: space-between;
+    width: 99%;
+    padding-top: 5vh;
+    
 }
 
-body{
-    margin: 0;
-    padding: 0;
+.figure{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(95,161,153,1) 65%);
+    opacity: 0.85;
+    width: min-content;
+    height:min-content;
+    margin: 2vh;
 }
 
-figure{
-    display: inline-block;
-    position: relative;
-    margin-left: 4px;
+.hockey1{
+    width: 20vh;
+}
+
+.hockey{
+    width: 26vh;
+    margin: 3vh;
 
 }
 
-blockquote{
-    display: inline-block;
-    padding-left: 60px;
-    padding-top: 40px;
+.articles{
+    width: 75%;
+    margin: 2vh 2vh 2vh 8vh;
 }
 
-dt{
-    margin-bottom: 3px;
-}
-
-dd{
-    margin-bottom: 30px;
-    text-indent: 40px;
-}
-
-#seccion{
-    box-sizing: border-box;
-    display: inline-block;
-    width: 70%;
-    margin-left: 5%;
-    margin-top: 40px;
-}
-
-#images{
-    width: 120px;
-    box-sizing: content-box;
-    position: relative;
-}
-
-article{
-    margin-bottom: 30px;
+.article{
+    margin-bottom: 5vh;
 }
 
 h3{
-    font-weight: bold;
-    font-size: large;
-    padding-bottom: 4px;
+    font-size:larger;
 }
 
 .parrafo{
     text-indent: 20px;
-    display: inline-block;
+}
+
+.blockquote{
+    width: 75%;
+    margin: 2vh 2vh 2vh 8vh;
+}
+
+dt{
+    font-size: larger;
+    font-weight: bold;
+}
+
+dd{
+    text-indent: 5vh;
+    margin-bottom: 3vh;
 }
 
 .contact{
-    margin-top: 30px;
-    display: inline-block;
-    text-align:left;
-    line-height: 45px;
-    margin-left: 60px;
-}
-
-#hockey3{
-    position: relative;
-    top: 25px;
-    left: 10px;
-    padding-top: 20px;
+    width: 75%;
+    margin-left: 7vh;
+    line-height: 7vh;
 }
 
