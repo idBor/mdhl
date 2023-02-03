@@ -1,254 +1,197 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: "Comic Sans MS", "Comic Sans";
+}*/
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
 *{
+    background-color:aliceblue;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #F8E12E;
-opacity: 0.9;
-background-image:  radial-gradient(#5fa199 0.8px, transparent 0.8px), radial-gradient(#5fa199 0.8px, #F8E12E 0.8px);
-background-size: 32px 32px;
-background-position: 0 0,16px 16px;
-}
-
 header{
-    min-height: 20vh;
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    
 }
 
-.container{
-    width: 100%;
+h1{
+    margin-top: 3px;
+    margin-bottom: 7px;
+    font-size: xx-large;
+}
+
+#banner{
+    width: 99%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.banner{
-    width: 100%;
-    max-height: 60vh;
-    display: block;
-    margin: auto;
-    opacity: 0.95;
-}
 
-#title{
-    width: 25%;
+nav{
     position: absolute;
-    top: 5vh;
-    left: 25vh;
+    top: 20px;
+    right: 12px;
 }
 
-.nav{
-    position: absolute;
-    top: 4vh;
-    right: 3vh;
-    width: max-content;
-}
-
+/* Los "a" en el diseño del cliente tienen diferente tamaño, según el contenido de cada uno. Se respeta eso a la espera de más aclaraciones sobre el tema */
 nav a{
-    text-align: center;
+    
     text-decoration: none;
-    font-weight: bold;
-    color: black;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(95,161,153,1) 60%, rgba(95,161,153,1) 95%);
+    color: white;
+    background-color: #4472c4;
     border: 2px solid black;
     height: max-content;
-    width: 12vh;
-    padding: 5px 7px 5px 7px;
+    width:max-content;
+    padding: 5px 20px 5px 20px;
     display: inline-block;
-    box-shadow: 1px 1px 8px 4px #F8E12E;
+    box-shadow: 2px 2px rgba(88, 87, 87, 0.412);
     margin: 0;
 }
 
 .active{
-    background-color: #F8E12E;
+    background-color: #71ad47;
+
 }
 
 main{
-    max-height: 80vh;
+    margin: 0;
+    padding: 0;
+    height: 1200%;
 }
 
 h2{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(95,161,153,1) 60%, rgba(95,161,153,1) 95%);
     width: 100%;
     margin: 0;
     padding-top: 6px;
     padding-bottom: 8px;
-    align-self: flex-start;
+    border: 1.5px solid black;
     text-align: center;
     font-weight: bolder;
-    font-size: x-large;
-}
-
-.container1{
-    display: flex;
-    justify-content: space-around;
-    width: 99%;
-    padding-top: 5vh;
-    
-}
-
-.figure{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    opacity: 0.95;
-    width: min-content;
-    height:min-content;
-    border-radius: 8px;
-}
-
-.hockey{
-    width: 26vh;
-    margin: 3vh;
-
-}
-
-.articles{
-    width:fit-content;
-}
-
-.article{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    opacity: 0.9;
-    width: 100vh;
-    border-radius: 8px;
-    margin-bottom: 5vh;
-    padding: 1vh;
-}
-
-h3{
-    font-size:larger;
-}
-
-.text{
-    text-indent: 20px;
-}
-
-.blockquote{
-    width: max-content;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    opacity: 0.9;
-    border-radius: 8px;
-    padding: 1vh;
+    font-size: large;
 }
 
 dt{
-    font-size: larger;
     font-weight: bold;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+figure{
+    display: inline-block;
+    position: relative;
+    margin-left: 4px;
+
+}
+
+blockquote{
+    display: inline-block;
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+dt{
+    margin-bottom: 3px;
 }
 
 dd{
-    text-indent: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 30px;
+    text-indent: 40px;
+}
+
+#seccion{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 70%;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+#images{
+    width: 120px;
+    box-sizing: content-box;
+    position: relative;
+}
+
+article{
+    margin-bottom: 30px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 4px;
+}
+
+.parrafo{
+    text-indent: 20px;
+    display: inline-block;
 }
 
 .contact{
-    line-height: 7vh;
-    font-size: large;
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    opacity: 0.9;
-    width: max-content;
-    height: max-content;
-    border-radius: 8px;
-    padding: 1vh;
-    margin-top: 2vh;
-    justify-self: start;
-}
-
-.container2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-table{
-    width: max-content;
-    border-collapse: collapse;
-    border: 2px solid black;
-    border-radius: 6px;
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    
-    
-}
-
-caption{
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-top: 2px solid black;
-    font-size: x-large;
-    font-weight: bold;
-    padding: 2px;
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-}
-
-.aclaration{
-    font-size: small;
+    margin-top: 30px;
     display: inline-block;
-    padding-left: 5vh;
+    text-align:left;
+    line-height: 45px;
+    margin-left: 60px;
 }
 
-th{
-    width: 30vh;
-    border: 2px solid black;
-    padding: 2px 10px 2px 10px;
-    text-align: center;
-    font-size: x-large;
+#hockey3{
+    position: relative;
+    top: 25px;
+    left: 10px;
+    padding-top: 20px;
 }
 
-td{
-    width: 25vh;
-    border: 2px solid black;
-    padding: 3px 10px 3px 10px;
-    text-align: center;
-    font-size: large;
-}
-
-.final{
-    font-size: large;
-    display: flex;
-    flex-direction: column;
-    margin: 4vh;
-}
-
-.final p{
-    margin-bottom: 2vh;
-}
-
-.dates{
-    width: 120vh;
-    display: flex;
-    justify-content: space-between;
-}
-
-.subt{
-    font-size: x-large;
-    font-weight: bold;
-    margin-bottom: 3vh;
-}
-
-.ol{
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 4%, rgba(95,161,153,1) 85%);
-    opacity: 0.9;
-    width: 100vh;
-    border-radius: 8px;
-    padding-top: 3vh;
-    padding-left: 4vh;
-    margin-bottom: 5vh;
-}
-
-ol li{
-    padding-bottom: 2vh;
-}
-
-ol ol {
-    margin-left: 10vh;
-}
-
-.intro{
-    padding-top: 2vh;
-}
