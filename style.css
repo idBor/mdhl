@@ -257,3 +257,8 @@ ol ol {
     padding: 1vh 0vh 1vh 13vh;
     
 }
+
+iframe{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
